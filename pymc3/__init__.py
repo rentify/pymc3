@@ -22,7 +22,7 @@ from .debug import *
 from .diagnostics import *
 from .backends.tracetab import *
 
-from .plots import *
+
 
 from .tests import test
 
