@@ -372,7 +372,8 @@ def generate_samples(generator, *args, **kwargs):
                                         broadcast_shape,
                                         prefix_shape,
                                         *args, **kwargs)
-    return reshape_sampled(samples, size, dist_shape)
+    # return reshape_sampled(samples, size, dist_shape)   
+    return samples  # see https://github.com/pymc-devs/pymc3/issues/1897
 
 
 class Bounded(Distribution):
